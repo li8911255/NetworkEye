@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define kSQLitePassword @"networkeye"
+#define kSQLitePassword @"networkeyeFork"
 #define kSaveRequestMaxCount 300
 
 @interface NEHTTPEye : NSURLProtocol

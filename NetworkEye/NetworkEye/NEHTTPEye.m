@@ -110,7 +110,7 @@
     ne_HTTPModel.ne_response=(NSHTTPURLResponse *)self.response;
     ne_HTTPModel.endDateString=[self stringWithDate:[NSDate date]];
     NSString *mimeType = self.response.MIMEType;
-    if ([mimeType isEqualToString:@"application/json"]) {
+    if ([mimeType isEqualToString:@"application/json"]  || [mimeType isEqualToString:@"text/plain"]) {
         ne_HTTPModel.receiveJSONData = [self responseJSONFromData:self.data];
     } else if ([mimeType isEqualToString:@"text/javascript"]) {
         // try to parse json if it is jsonp request
